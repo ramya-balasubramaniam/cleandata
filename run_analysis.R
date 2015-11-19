@@ -61,8 +61,8 @@ run_analysis <- function(x){                                      # x has the na
 	activity_label <- vector(mode = "character")
 	m <- matrix(nrow =180, ncol=length(value_4_avg))        # calculation of average of all variables for a particular Subject &
 	while(j<=30 & k<=6){                                    # activity label for.eg. subject ID = 1 & activity label = LAYING
-		x <- extract_data[extract_data$Subject_ID == j & extract_data$Activity_ID == Activity_list[k],value_4_avg]
-		if(nrow(x)==0){
+		x1 <- extract_data[extract_data$Subject_ID == j & extract_data$Activity_ID == Activity_list[k],value_4_avg]
+		if(nrow(x1)==0){
 			if(j<=30 & k<6){
 				k <- k+1                                       
 				next
