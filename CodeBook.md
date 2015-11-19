@@ -8,7 +8,6 @@
 #### 7. The activity IDs and their corresponding activity labels are stored in variable Activity_list. This variable is used to replace activity IDs such as 1,2,3 etc. by WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS etc. respectively.
 #### 8. The column names with variable names containing "mean" and "std" are extracted using "grep" function. The final extracted dataset with only the columns computing mean and standard deviation with the activity labels replaced is stored in extract_data variable.
 #### 9. Using Subsetting first the rows corresponding to a particular subject and activity are extracted and saved in x1 and using the mapply function the mean for all the columns is calculated. 
-#### 10. This list is coerced as vector and saved as a row of matrix m. Corresponding subject ID is saved in subject_ID vector
-and Activity label is saved in activity_label vector. The column names for m matrix are changed to reflect the column names of the dataset.
+#### 10. This list is coerced as vector and saved as a row of matrix m. Corresponding subject ID is saved in subject_ID vector and Activity label is saved in activity_label vector. The column names for m matrix are changed to reflect the column names of the dataset.
 #### 11. Finally subject_ID, activity_label and m are combined into one variable d1 and using write.table() function the datset is written into a text file final_cleandata.txt. 
 #### Note: The code has been inserted with print()function to print the message indicating the completion of a step. After every major step the variables used in the step have been removed using rm function for optimizing the space used to run the code.
